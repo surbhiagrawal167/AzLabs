@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build step
-        run: 
-          echo "Welcome ${{vars.Name}}!"
+        uses: actions/checkout@v4
+      - name: print html file
+        run: cat test.html
+        
          
